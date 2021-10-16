@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_h"
+    tools:context=".ScannerActvity">
+
+
+
+
+    <ImageView
+        android:layout_width="300dp"
+        android:src="@drawable/scanner"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/idIVCaptureImage"></ImageView>
+
+    <TextView
+        android:id="@+id/IdIVDetectedText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idIVCaptureImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="clear"
+        android:textAlignment="center"
+        android:textColor="@color/yellow_h"
+        android:textSize="18sp"
+        android:textStyle="italic"></TextView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/IdIVDetectedText"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Detect"
+        android:layout_marginEnd="20dp"
+        android:textAllCaps="false"
+        android:id="@+id/idBtnDetect"
+        android:background="@drawable/button_back"
+
+        app:backgroundTint="@color/yellow_h"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idBtnDetect"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="snap"
+        android:layout_marginEnd="20dp"
+        android:textAllCaps="false"
+        android:id="@+id/idBtnSnap"
+        android:background="@drawable/button_back"
+
+        app:backgroundTint="@color/yellow_h"
+        />
+
+</RelativeLayout>
