@@ -10,12 +10,21 @@
     tools:context=".MainActivity">
 
     <ImageView
+        android:id="@+id/gif_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+    <ImageView
         android:id="@+id/IdIVLogo"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="70dp"
-        android:src="@drawable/scanner"></ImageView>
+        android:src="@drawable/scanner"/>
+
+
 
     <TextView
         android:id="@+id/IdIVHead"
@@ -43,10 +52,22 @@
         android:layout_marginTop="51dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/button_back"
-        android:text="capture"
+        android:text="사진 촬영하기"
         android:textAllCaps="false"
 
         app:backgroundTint="@color/yellow_h" />
 
+    <Button
+        android:id="@+id/idBtnIMAGE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idBtnCapture"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/button_back"
+        android:text="갤러리에서 사진 가져오기"
+        android:textAllCaps="false"
 
+        app:backgroundTint="@color/yellow_h" />
 </RelativeLayout>

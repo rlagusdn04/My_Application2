@@ -8,15 +8,13 @@
     tools:context=".ScannerActvity">
 
 
-
-
     <ImageView
+        android:id="@+id/idIVCaptureImage"
         android:layout_width="300dp"
-        android:src="@drawable/scanner"
         android:layout_height="400dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
-        android:id="@+id/idIVCaptureImage"></ImageView>
+        android:src="@drawable/scanner"></ImageView>
 
     <TextView
         android:id="@+id/IdIVDetectedText"
@@ -29,7 +27,7 @@
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="10dp"
         android:gravity="center"
-        android:text="clear"
+        android:text="#"
         android:textAlignment="center"
         android:textColor="@color/yellow_h"
         android:textSize="18sp"
@@ -41,7 +39,7 @@
         android:layout_below="@id/IdIVDetectedText"
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
-        android:text="Detect"
+        android:text="텍스트 추출"
         android:layout_marginEnd="20dp"
         android:textAllCaps="false"
         android:id="@+id/idBtnDetect"
@@ -56,7 +54,7 @@
         android:layout_below="@id/idBtnDetect"
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
-        android:text="snap"
+        android:text="사진 찍기"
         android:layout_marginEnd="20dp"
         android:textAllCaps="false"
         android:id="@+id/idBtnSnap"
